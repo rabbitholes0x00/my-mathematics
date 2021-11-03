@@ -5,7 +5,8 @@
 * Statistika dan probabilitas (Pengolahan data dan kalkulasi peluang)
 * Kalkulus dasar (Fungsi differensial)
 ## Frequently Asked Questions
-[The Story of Mathematics](https://www.storyofmathematics.com/)
+* [The Story of Mathematics](https://www.storyofmathematics.com/)
+* [Set Theory and Foundations of Mathematics](http://settheory.net)
 ### Numbers
 * [Numbers, Numerals and Digits](https://www.mathsisfun.com/numbers/numbers-numerals-digits.html)
 * [Bilangan Apa yang Paling Penting dalam Matematika?](https://anakbertanya.com/bilangan-apa-yang-paling-penting-dalam-matematika/)
