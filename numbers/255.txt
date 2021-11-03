@@ -1,0 +1,11 @@
+255 adalah nomor khusus dalam beberapa tugas yang berkaitan dengan komputasi. Ini adalah nilai maksimum yang dapat diwakili oleh bilangan biner delapan digit oleh karena itu nilai maksimum yang dapat diwakili oleh unsigned(yang tidak ditandatangani) 8-bit byte(ukuran byte yang paling umum, juga disebut oktet ) ukuran variabel umum terkecil yang digunakan dalam bahasa pemrograman tingkat tinggi (sedikit lebih kecil, tetapi jarang digunakan untuk penyimpanan nilai). Rentangnya adalah 0 hingga 255, yang merupakan 256 nilai total.
+
+255 = 2^8 - 1 = FF(16) = 11111111(2)
+
+Misalnya, 255 adalah nilai maksimum dari:
+* komponen dalam model warna RGB 24-bit , karena setiap saluran warna diberi delapan bit;
+* setiap quad bertitik dalam alamat IPv4;
+* alpha blending skala di Delphi (255 makhluk 100% terlihat dan 0 sepenuhnya transparan). 
+
+Penggunaan delapan bit untuk penyimpanan di video game lama memiliki konsekuensi muncul sebagai batas keras di banyak video game. Misalnya dalam game The Legend of Zelda yang asli, itu dapat membawa maksimal 255 rupee. Itu sering digunakan untuk angka di mana gameplay kasual tidak akan menyebabkan siapa pun melebihi angka tersebut. Namun, dalam kebanyakan situasi itu dapat dicapai dengan waktu yang cukup. Hal ini dapat menyebabkan banyak keanehan lainnya muncul ketika nomor membungkus kembali ke 0 seperti yang terkenal "death screen" terlihat setelah menyelesaikan level 255 dari Pac-Man.
+

@@ -1,0 +1,123 @@
+# Bits, Nibbles & Bytes
+Bit adalah digit biner, bentuk data terkecil di komputer, dan dapat berupa 0atau 1. Seperti Boolean, bit dapat mewakili on/off, true/false, dll. Ada empat bit dalam nibble, dan delapan bit dalam satu byte.
+
+* bit 		= Binary 0 atau 1
+* Nibble 	= 4 bit
+* Byte 		= 8 bit
+
+1 Byte = bit
+
+# Binary [Base 2]
+11111111 = 255
+255 = 128 + 64 + 32 + 16 + 8 + 4 + 2 + 1
+
+Bagaimana kita bisa tahu `11111111` mewakili angka `255`(dalam desimal)?
+
+Dalam sistem dasar, setiap nomor memiliki bobot yang berbeda. Dalam desimal, tujuh di 7 vs 70 tidak mewakili nilai yang sama.
+
+Mulai dari nilai yang paling tidak signifikan (yang sampai ke kanan), Anda harus mengalikan setiap digit dengan hasil dari basis yang dinaikkan ke posisinya, dan menjumlahkan semuanya. Posisi sampai ke kanan adalah 0, lalu 1, lalu 2, dan seterusnya sampai akhir, yang dalam hal ini adalah 7.
+
+Ilustrasi:
+1 * 2 ** 7 +
+1 * 2 ** 6 +
+1 * 2 ** 5 +
+1 * 2 ** 4 +
+1 * 2 ** 3 +
+1 * 2 ** 2 +
+1 * 2 ** 1 +
+1 * 2 ** 0 = 255
+
+Dan setelah mengevaluasi eksponen, dapat ditulis persamaan seperti ini:
+
+(Vertikal)
+1 * 128 + 
+1 * 64 + 
+1 * 32 + 
+1 * 16 + 
+1 * 8 + 
+1 * 4 + 
+1 * 2 + 
+1 * 1 = 255
+
+(Horizontal)
+1 * 128 + 1 * 64 + 1 * 32 + 1 * 16 + 1 * 8 + 1 * 4 + 1 * 2 + 1 * 1 = 255
+
+Cara Sederhana:
+128 + 64 + 32 + 16 + 8 + 4 + 2 + 1 = 255
+
+Contoh Sederhana jika jumlahnya 101:
+1 * 2 ** 2 + 0 * 2 ** 1 + 1 * 2 ** 0 = 5
+
+# Decimal [Base 10]
+Jika itu tidak masuk akal, pikirkan dalam desimal. 007 dan 070 dan 700 semuanya adalah nilai yang sangat berbeda (nol di depan tidak berpengaruh pada nilai). Tujuh adalah 7 * 10^0, tujuh puluh adalah 7 * 10^1, dan tujuh ratus adalah 7 * 10^2.
+
+Ilustrasi nilai 7, 70, 700:
+* Tujuh 			= 007 = 7 * 10^0 atau 7 * 1 
+* Tujuh Puluh	= 070 = 7 * 10^1 atau 7 * 10
+* Tujuh Ratus	= 700 = 7 * 10^2 atau 7 * 100
+
+Ilustrasi nilai 255 secara vertikal:
+2 * 10 ** 2 + 
+5 * 10 ** 1 + 
+5 * 10 ** 0 = 255
+
+Ilustrasi nilai 255 secara horizontal:
+(2) * 10 ** 2 + (5) * 10 ** 1 + (5) * 10 ** 0 = 255
+
+Nilai 255 dengan cara Sederhana:
+200 + 50 + 5 = 255
+
+# Hexadecimal [Base 16]
+Heksadesimal adalah basis 16 dan F mewakili nilai terbesar yaitu 15.
+
+Ilustrasi nilai 255 secara vertikal:
+15 * 16 ** 1 + 
+15 * 16 ** 0 = 255
+
+Ilustrasi nilai 255 secara horizontal:
+15 * 16 ** 1 + 15 * 16 ** 0 = 255
+
+Nilai 255 dengan cara sederhana:
+15 * 16 + 15 * 1 = 255
+
+Nilai 255 dengan cara sederhana:
+240 + 15 = 255
+
+# Binary, Decimal, Hexadecimal
+Konsep penting untuk dipertimbangkan di sini adalah bahwa 11111111, 255, dan FF semua mewakili angka yang sama. hanya saja sulit untuk disadari secara intuitif karena kita sudah terbiasa dengan angka basis 10. Angka ini juga merupakan nilai terbesar dari satu byte.
+
+Heksadesimal adalah cara yang mudah dan ringkas untuk mewakili nilai byte, karena selalu terkandung dalam dua karakter.
+
+// Binary - 11111111
+1 * 2 ** 7 +
+1 * 2 ** 6 +
+1 * 2 ** 5 +
+1 * 2 ** 4 +
+1 * 2 ** 3 +
+1 * 2 ** 2 +
+1 * 2 ** 1 +
+1 * 2 ** 0
+
+// Decimal - 255
+2 * 10 ** 2 + 5 * 10 ** 1 + 5 * 10 ** 0
+
+// Hexadecimal - FF
+15 * 16 ** 1 + 15 * 16 ** 0
+
+# Representing different bases in programming
+Bahasa pemrograman akan menggunakan awalan untuk mewakili nilai di luar basis 10. 
+Biner adalah 0b, dan heksadesimal adalah 0x, sehingga Anda dapat menulis 0b1111 atau 0xff untuk menampilkan nilai dalam desimal dan untuk octal dalah 0o.
+
+* Binary 			= 0b
+* Decimal 		= 10
+* Hexadecimal	= 0x
+* Octal				= 0o
+
+# Counting in different bases
+Nilai maksimum byte adalah 255 dan nilai maksimum nibble(4 bit) adalah 15. Berikut adalah bagan menghitung sampai 15 dalam biner, desimal, dan heksadesimal.
+
+* Binary = 0000, 0001, 0010, 0011, 0100, 0101, 0110, 0111, 1000, 1001, 1010, 1011, 1100, 1101, 1110, 111
+* Decimal = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15
+* Hexadecimal = 01, 02, 03, 04, 05, 06, 07, 08, 09, 0a, 0b, 0c, 0d, 0e, 0f
+
+Heksadesimal sering ditulis dengan nol di depan, membuat representasi byte selalu dua karakter.
