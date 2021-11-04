@@ -1,3 +1,33 @@
 # Math Mindmap
 List of Math Mindmap
-## Numbers
+
+## Intro Numbers & Numeracy
+* The Dawn of Numbers!
+* Number, Numeral, Digit
+* Roman Numerals: Sign-Value vs Positional Notation
+  ## Value
+  * Place Value
+  * Decimal Place Value
+  * Rounding Numbers
+  ## Number Systems
+  * Decimal, Binary, Octal, Hexadecimal
+  * Bit & Byte
+  * Natural Numbers > Whole Numbers > Integers (Number Line)
+
+## Arithmetic
+* What is Arithmetic?
+* Order of Operations also called BODMAS we meet (+, -, *, /)
+* Intro Distributive in Property in Arithmetic <mathantics>
+  
+  ## Addition & Subtraction
+  * Deep, Commutative & Associative Properties of Addition
+  
+  ## Multiplication
+  * Deep, Commutative Property of Multiplication
+  * Deep, Associative & Distributive Properties of Multiplication
+  * Multiplying Negative Numbers
+  
+  ## Division
+  * Division and Prime Numbers
+
+  ## Factoring
