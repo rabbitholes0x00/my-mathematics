@@ -6,6 +6,7 @@
 * Kalkulus dasar (Fungsi differensial)
 ## Frequently Asked Questions
 * [The Story of Mathematics](https://www.storyofmathematics.com/)
+* [Istilah Matematika dalam Bahasa Inggris](https://www.ef.co.id/englishfirst/kids/blog/istilah-matematika-dalam-bahasa-inggris)
 * [Set Theory and Foundations of Mathematics](http://settheory.net)
 ### Numbers
 * [Numbers, Numerals and Digits](https://www.mathsisfun.com/numbers/numbers-numerals-digits.html)
